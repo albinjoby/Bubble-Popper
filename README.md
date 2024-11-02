@@ -11,13 +11,13 @@
 - Member 3: Adithyan Krishna - Sahrdaya College of Engineering and Technology
 
 ### Project Description
-Bubble Popper is an interactive game where users pop virtual bubbles for fun. It’s a simple, yet oddly satisfying way to pass the time by clicking on bubbles that pop and reappear with a fun "pop" sound effect!
+Bubble Popper is an interactive game that simulates the experience of popping bubble wrap. It’s a simple, oddly satisfying way to pass the time by clicking virtual bubbles that "pop" and then reappear, complete with a fun sound effect!
 
 ### The Problem (that doesn't exist)
-Ever felt the overwhelming frustration of having no bubbles to pop when you're bored? The agony of unpopped bubbles just sitting there, mocking you? Yeah, we thought so.
+Ever felt the frustration of having no bubble wrap to pop when you're stressed or bored? The endless temptation of bubbles waiting to be popped? We know the feeling.
 
 ### The Solution (that nobody asked for)
-Introducing Bubble Popper! A web-based game to soothe your pop-cravings. Pop virtual bubbles anytime, anywhere. No soap, no mess, just endless popping satisfaction.
+Introducing Bubble Popper! A web-based bubble wrap simulator to satisfy your pop-cravings. Enjoy the therapeutic experience of popping virtual bubbles anytime, anywhere—no plastic waste, just endless popping satisfaction!
 
 ## Technical Details
 ### Technologies/Components Used
