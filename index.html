@@ -58,6 +58,7 @@
 
     <script>
         const grid = document.getElementById('bubble-grid');
+        const popSound = new Audio('pop.mp3');
 
         function createBubbles() {
             for (let i = 0; i < 25; i++) {
@@ -70,10 +71,14 @@
 
         function popBubble(event) {
             const bubble = event.target;
-            bubble.classList.add('popped');
-            setTimeout(() => {
-                bubble.classList.remove('popped');
-            }, 1000);
+            if (!bubble.classList.contains('popped')) {
+                bubble.classList.add('popped');
+                popSound.currentTime = 0;
+                popSound.play();
+                setTimeout(() => {
+                    bubble.classList.remove('popped');
+                }, 1000);
+            }
         }
 
         createBubbles();
