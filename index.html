@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Bubble Popper</title>
     <style>
@@ -9,18 +8,15 @@
             background-color: #f0f8ff;
             text-align: center;
         }
-
         h1 {
             color: #2b6cb0;
         }
-
         #bubble-grid {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             gap: 10px;
         }
-
-        #bubble-grid div {
+        .bubble {
             width: 80px;
             height: 80px;
             background-color: #87ceeb;
@@ -28,19 +24,35 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
+        }
+        .popped {
+            background-color: #d1d1d1;
         }
     </style>
 </head>
-
 <body>
     <h1>Bubble Popper</h1>
-    <div id="bubble-grid">
-        <div>Bubble</div>
-        <div>Bubble</div>
-        <div>Bubble</div>
-        <div>Bubble</div>
-        <div>Bubble</div>
-    </div>
+    <div id="bubble-grid"></div>
+    <script>
+        const grid = document.getElementById('bubble-grid');
+        function createBubbles() {
+            for (let i = 0; i < 25; i++) {
+                const bubble = document.createElement('div');
+                bubble.className = 'bubble';
+                bubble.textContent = "Bubble";
+                bubble.addEventListener('click', popBubble);
+                grid.appendChild(bubble);
+            }
+        }
+        function popBubble(event) {
+            const bubble = event.target;
+            bubble.classList.add('popped');
+            setTimeout(() => {
+                bubble.classList.remove('popped');
+            }, 1000);
+        }
+        createBubbles();
+    </script>
 </body>
-
 </html>
